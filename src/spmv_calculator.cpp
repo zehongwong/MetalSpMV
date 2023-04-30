@@ -80,7 +80,7 @@ void SpmvCalculator::load_matrix_vector(const std::string& filename) {
     // Read the matrix from file
     FILE *f;
     f = fopen(filename.c_str(), "r");
-    if (f == NULL) {
+    if (f == nullptr) {
         Logger::error("Failed to open file: " + filename + ". Please check the file path.");
         Logger::error("Download link: https://suitesparse-collection-website.herokuapp.com/MM/Schenk_AFE/af_shell10.tar.gz");
         Logger::error("Extract and put the .mtx file in the data folder");
