@@ -72,8 +72,8 @@ make && make kernel
 **Conclusion**:
 
 - Without any compiler optimization, the GPU program achieves a **10x** speedup in comparison to the CPU serial version.
-- Utilizing loop unrolling optimization and `-O2`, the GPU program attains a **40x** speedup compared to the CPU serial version.
-- When the CPU applies the `-O3` optimization, the CPU program experiences a **6.5x** speedup, thereby narrowing the performance gap between the GPU and CPU.
+- Utilizing loop unrolling optimization and `-O2`, the GPU program achieves a **40x** speedup compared to the CPU serial version.
+- When the CPU applies the `-O3` optimization, the CPU program achieves a **6.5x** speedup, thereby narrowing the performance gap between the GPU and CPU.
 
 **Running Results**:
 
