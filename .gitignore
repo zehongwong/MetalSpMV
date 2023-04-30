@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+*.air
+*.metallib
+cmake-build-debug
+cmake_install.cmake
+CMakeFiles
+CMakeCache.txt
+Makefile
+spmv
+data/*.mtx

@@ -15,7 +15,7 @@ include_directories(include/metal-cpp)
 set(CMAKE_CXX_COMPILER "/opt/homebrew/opt/llvm/bin/clang++")
 
 # Set -O3 optimization flag for C++ compiler
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 
 set(SOURCE_FILES src/main.cpp src/spmv_calculator.cpp src/logger.cpp)
@@ -30,7 +30,7 @@ target_link_libraries(spmv -fopenmp GSL::gsl GSL::gslcblas
         "-framework Metal" "-framework Foundation" "-framework QuartzCore")
 
 add_custom_target(kernel
-        COMMAND xcrun -sdk macosx metal -O0 -c src/spmv.metal -o spmv.air
+        COMMAND xcrun -sdk macosx metal -c src/spmv.metal -o spmv.air
         COMMAND xcrun -sdk macosx metallib spmv.air -o spmv.metallib
         DEPENDS src/spmv.metal
         )
