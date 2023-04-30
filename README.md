@@ -79,15 +79,15 @@ make && make kernel
 
 - C++ applies `-O0` && MSL applies `-O0`
 
-<img src="/Users/zehongwang/Library/Application Support/typora-user-images/image-20230429233259669.png" alt="image-20230429233259669" style="zoom:50%;" />
+<img src="data/performance1.png" alt="image-1" style="zoom:50%;" />
 
 - C++ applies `-O0`  && MSL applies `-O2`
 
-<img src="/Users/zehongwang/Library/Application Support/typora-user-images/image-20230429232855505.png" alt="image-20230429232855505" style="zoom:50%;" />
+<img src="data/performance2.png" alt="image-2" style="zoom:50%;" />
 
 - C++ applies `-O3` and MSL applies `-O2`
 
-<img src="/Users/zehongwang/Library/Application Support/typora-user-images/image-20230429233338792.png" alt="image-20230429233338792" style="zoom:50%;" />
+<img src="data/performance3.png" alt="image-3" style="zoom:50%;" />
 
 
 ## Available Matrix Collection
