@@ -24,6 +24,16 @@ brew install cmake
 xcode-select --install
 ```
 
+## Runnning Command
+
+The program **error tips are very friendly**, so you can just run the program and see the tips.
+
+```bash
+cmake .
+make && make kernel
+./spmv xxx.mtx
+```
+
 ## File Structure
 
 - ### spmv.metal
@@ -57,16 +67,6 @@ xcode-select --install
 - ### logger.h / logger.cpp
 
   The **Logger** provides static methods for logging messages of various levels: `info`, `error`, `debug`, and `warn`. It also includes a method, `time`, for measuring and logging the time taken by specific operations.
-
-## Runnning Command
-
-The program **error tips are very friendly**, so you can just run the program and see the tips.
-
-```bash
-cmake .
-make && make kernel
-./spmv xxx.mtx
-```
 
 ## Performance
 **Conclusion**:
